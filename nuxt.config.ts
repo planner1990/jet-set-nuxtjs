@@ -33,9 +33,18 @@ export default defineNuxtConfig({
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'Connect with local tour guides for authentic travel experiences in the Netherlands' }
+        { name: 'description', content: 'Connect with local tour guides for authentic travel experiences in the Netherlands' },
+        { name: 'og:title', content: 'Jet Set - Your Local Tourism Platform' },
+        { name: 'og:description', content: 'Connect with local tour guides for authentic travel experiences in the Netherlands' },
+        { name: 'og:type', content: 'website' },
+        { name: 'og:url', content: 'https://jetset.tourism' },
+        { name: 'theme-color', content: '#1976D2' }
       ],
-    }
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      ]
+    },
+    pageTransition: { name: 'page', mode: 'out-in' }
   },
 
   runtimeConfig: {
